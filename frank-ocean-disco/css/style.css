@@ -1,0 +1,203 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+body{
+     padding: 10% 0;
+}
+
+h1, h2{
+     font-family:'Pokemon GB';
+     text-align: center;
+     margin-top: 0
+}
+
+p{
+     font-family:'Pokemon GB';
+     text-align: center;
+     margin-top: 0;
+     font-size: 0.8rem
+}
+
+p>a{
+     text-decoration-line:none;
+     color: indigo
+}
+
+li{
+     list-style-type: none;
+}
+
+.mainTable{
+     margin: 5%;
+     border: 1px solid black;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     /* justify-content: center; */
+
+}
+
+.albums{
+     width: 50%;
+     /* padding: 5% 5%; */
+     display: flex;
+     flex-direction: column;
+     /* justify-content: flex-start; */
+     /* gap:5px; */
+     /* padding-bottom: 0;
+     padding-top:0; */
+     border: 1px solid indigo;
+}
+
+.albums ul{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     border: black 1px solid;
+     padding: 0%;
+     margin: 0%;
+     align-items: center;
+}
+
+.albums li{
+     border: 1px solid black;
+     width: 50%;
+     height: 33.33%;
+     padding: 0%;
+     margin: 0%;
+}
+.albums img{
+     width: 100%;
+     height: 100%;
+     border: 1px solid black;
+     /* margin: 0.5%; */
+     box-shadow: 2.5px 5px indigo;
+}
+
+img:hover{
+     opacity: 50%;
+}
+
+.trackList h2{
+     width: 50%;
+     text-align: center;
+     border: 1px solid black;
+}
+
+.trackListDiv{
+     width: 50%;
+     font-family:'Pokemon GB';
+     border: black 1px solid;
+     display: flex;
+     flex-direction: column;     
+}
+
+.tracklist{
+     width: 100%;
+     font-family:'Pokemon GB';
+     border: black 1px solid;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 0%;
+     margin: 0%;
+}
+
+.tracklist li{
+     width: 100%;
+     border-radius: 3px;
+     padding: 2% 0%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-bottom: 2%;
+     border: 1px solid black;
+}
+ .tracklist .table-header {
+     background-color: #95A5A6;
+     font-size: 12px;
+     letter-spacing: 0.05em;
+}
+   .tracklist .table-row {
+     background-color: #ffffff;
+     font-size: 12px;
+}
+   .tracklist .col-1 {
+     flex-basis: 15%;
+     text-align: center;
+}
+   .tracklist .col-2 {
+     flex-basis: 60%;
+}
+   .tracklist .col-3 {
+     flex-basis: 15%;
+     text-align: center;
+}
+   .tracklist .col-4 {
+     flex-basis: 15%;
+     text-align: center;
+}
+
+
+.stream{
+     text-align: center;
+     margin-top: 5%; 
+     font-size: 1.3rem;
+     color: indigo
+}
+
+.spotify:hover{
+     color: lime
+}
+
+.apple:hover{
+     color: rgb(0, 81, 255)
+}
+
+.youtube:hover{
+     color: rgb(255, 0, 0)
+}
+
+.soundcloud:hover{
+     color: rgb(255, 123, 0)
+}
